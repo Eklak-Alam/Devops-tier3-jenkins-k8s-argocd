@@ -1,0 +1,38 @@
+# =========================
+# 1. GLOBAL (Root Level)
+# =========================
+# Ignore node_modules if you accidentally install packages in root
+node_modules/
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# =========================
+# 2. SERVER (Backend) IGNORES
+# =========================
+server/node_modules/
+server/.env
+server/logs/
+server/npm-debug.log*
+server/yarn-error.log*
+
+# =========================
+# 3. CLIENT (Frontend) IGNORES
+# =========================
+client/node_modules/
+client/.env
+client/.env.local
+client/.env.production
+client/.next/
+client/out/
+client/build/
+client/dist/
+client/npm-debug.log*
+
+# =========================
+# 4. DOCKER & DATABASE
+# =========================
+# If you run DB locally with Docker volumes
+mysql-data/
+postgres-data/
